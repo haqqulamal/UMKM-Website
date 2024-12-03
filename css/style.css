@@ -1,0 +1,462 @@
+/*------------------------------------------------------------------
+
+    Main Style Stylesheet
+    Project:        BEAM. |  
+    Version:        1.0
+    Author:         Bakhtrai Badr
+    Last change:    9/12/2018
+    Primary use:    App And Software Showcase 
+
+-------------------------------------------------------------------*/
+
+/*=======================================================
+
+			TABLE OF CONTENT:
+
+   1*)Body Style
+   2*)Typography
+   3*)Buttons
+   4*)Navbar
+   5*)Banner
+   6*)About
+   7*)Services
+   8*)Features
+   9*)Prices
+   10*)Testimonials
+   11*)Video PopUp
+   12*)App Screenshots
+   13*)Team
+   14*)Brands
+   15*)footer
+   16*)Media Queries:
+
+========================================================*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+/*=======================================================
+			BODY:
+========================================================*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #686b75;
+}
+
+/*=======================================================
+			COLORS(Only Visible In Scss File):
+========================================================*/
+
+/*=======================================================
+			TYPOGRAPHY:
+========================================================*/
+
+h1 {
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1.3em;
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.section-title:after {
+  content: "";
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  display: block;
+  background-color: #fd8917;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.sub {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+/*=======================================================
+			BUTTONS:
+========================================================*/
+
+.btn-primary {
+  background: #fd8917;
+  padding: 15px 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #2c8a82;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary {
+  background: #2c8a82;
+  padding: 15px 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background: #fd8917;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-transparent {
+  background: transparent;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #068bea;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+  background: #068bea;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/*=======================================================
+			NAVBAR
+========================================================*/
+
+.navbar {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  color: #fff;
+}
+
+.navbar .navbar-brand span {
+  color: #fd8917;
+}
+
+.navbar .navbar-collapse {
+  padding: 30px 0 0 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  padding: 0 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #fd8917;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #fd8917;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav .active > .nav-link {
+  color: #fd8917;
+}
+
+.navbar .navbar-nav .btn {
+  position: relative;
+  top: -15px;
+  margin-left: 15px;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
+  border: none;
+  outline: 0;
+}
+
+.navbar-light {
+  background: #2c8a82;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-light .navbar-collapse {
+  padding: 25px 0 0 0;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #fd8917;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fd8917;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler:focus,
+.navbar-light .navbar-toggler:hover {
+  border: none;
+  outline: 0;
+}
+
+/*=======================================================
+			BANNER:
+========================================================*/
+
+.banner {
+  background: url(../imgs/header2.png);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+}
+
+.banner .container .caption {
+  padding-top: 120px;
+}
+
+.banner .container .caption h1 {
+  margin-bottom: 20px;
+}
+
+.banner .container .caption p {
+  margin-bottom: 20px;
+}
+
+.banner .container .caption .btn {
+  margin-bottom: 40px;
+}
+
+.banner .container .caption img {
+  width: 800px;
+}
+
+.banner .container .caption .logos img {
+  width: 273px;
+}
+
+/*=======================================================
+			ABOUT:
+========================================================*/
+
+#about {
+  padding: 120px 0;
+  text-align: center;
+}
+
+/*=======================================================
+			SERVICES:
+========================================================*/
+
+#services {
+  padding: 120px 0;
+}
+
+#services p {
+  margin: 25px 0;
+}
+
+#services ul li span {
+  position: relative;
+  bottom: 15px;
+}
+
+#services .img-table {
+  position: relative;
+  top: 30px;
+}
+
+#services .caption {
+  position: relative;
+  top: 30px;
+}
+
+#services .seconde {
+  padding: 80px 0;
+}
+
+/*=======================================================
+			FEATURES:
+========================================================*/
+
+#features {
+  padding: 120px 0;
+  text-align: center;
+}
+
+#features .feature {
+  margin: 30px 0;
+  padding: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+#features .feature .feature-icon {
+  background: url(../imgs/icons-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+}
+
+#features .feature .feature-icon svg {
+  position: relative;
+  top: 40px;
+}
+
+#features .feature h4 {
+  margin: 25px 0;
+}
+
+#features .feature:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/*=======================================================
+			FOOTER:
+========================================================*/
+
+#footer {
+  background: url(../imgs/footer.png);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  padding: 120px 0 40px 0;
+  color: #fff;
+}
+
+#footer p {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Jarak antar logo */
+}
+
+.logo {
+  width: 180px; /* Sesuaikan ukuran logo */
+  height: auto; /* Pertahankan proporsi logo */
+}
+
+.logo-large {
+  width: 300px; /* Ukuran logo besar */
+  height: auto; /* Pertahankan proporsi logo */
+  margin-top: 0; /* Hilangkan jarak atas antara logo Indo Center dan teks */
+}
+
+.supported-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/*=======================================================
+			MEDIA QUERIES:
+========================================================*/
+
+@media (max-width: 992px) {
+  .banner .container .row .caption h1 {
+    font-size: 48px;
+  }
+
+  .banner .container .caption .logos img {
+    width: 175px;
+  }
+
+  section .container .row h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  #home .navbar {
+    background: #2c8a82;
+  }
+  #home .navbar .navbar-collapse .navbar-nav .btn {
+    position: static;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #home .banner .caption h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .logo {
+    width: 147px;
+  }
+  .banner .container .caption .logos img {
+    width: 157px;
+  }
+}
+
+@media (max-width: 400px) {
+  #video-popup .video-box .waves-block {
+    display: none;
+  }
+}
